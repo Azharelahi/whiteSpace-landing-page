@@ -20,7 +20,7 @@ const Sect2 = () => {
                 </div>
 
                 <div className="sect2_row3">
-                    <button className="blue_button">Get Started Icon</button>
+                    <button className="blue_button">Get Started →</button>
                 </div>
 
             </div>

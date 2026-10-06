@@ -34,6 +34,13 @@
     flex: 1;
 }
 
+@media (min-width: 400px) {
+    .sect4_image {
+        width: 80%;
+       justify-self: center;
+        align-self: center;
+    }
+}
 
 /* PART 2: QUERIES, SMALLEST TO LARGEST */
 

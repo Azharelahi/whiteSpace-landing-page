@@ -1,11 +1,11 @@
 import React from "react";
 import "./sect10.css";
-
+import Apps from "./../../assets/Apps.png";
 const Sect10 = () => {
     return (
         <section className="sect10_container">
             <div className="sect10_left">
-                <img src="/your-image.png" alt="Section visual" />
+                <img src={Apps} alt="Section visual" />
             </div>
 
             <div className="sect10_right">

@@ -21,12 +21,12 @@ const Sect5 = () => {
 
                 <div className="sect5_row2">
                     <p>
-                        Your paragraph text goes here.
+                        Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
                     </p>
                 </div>
 
                 <div className="sect5_row3">
-                    <button>Get Started</button>
+                    <button className="blue_button">Get Started</button>
                 </div>
 
             </div>

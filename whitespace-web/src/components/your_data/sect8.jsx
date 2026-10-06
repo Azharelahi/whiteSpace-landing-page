@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./sect8.css";
+import colorcont from  "./../../assets/colorcont.png"
 
 const Sect8 = () => {
     return (
@@ -31,7 +32,7 @@ const Sect8 = () => {
             {/* RIGHT SIDE */}
             <div className="sect8_right">
                 <img
-                    src="/your-image.png"
+                    src={colorcont}
                     alt="Section visual"
                 />
             </div>
