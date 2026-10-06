@@ -20,20 +20,21 @@ body {
    ========================= */
 
 h2 {
-    margin: 0;
-    font-size: clamp(2rem, 4vw, 4rem);
-    font-weight: 700;
-    line-height: 1.2;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 p {
-    margin: 0;
-    font-size: clamp(0.9rem, 1.2vw, 1.25rem);
-    line-height: 1.6;
+  margin: 0;
+  font-size: clamp(0.9rem, 1.2vw, 1.25rem);
+  line-height: 1.6;
 }
 
-.blue-button {
+.blue_button {
   background-color: #4F9CF9;
   border-radius: 10px;
   border: none;
+  padding: 1em 1.8em;
 }

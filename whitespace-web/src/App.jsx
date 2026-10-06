@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Sect2 from './components/section1/sect2.jsx';
+import Sect3 from "./components/Section3/sect3.jsx"
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     return (
         <>
             <Sect2 />
+            <Sect3/>
 
             <div className="viewport-display">
                 {viewport.width}px × {viewport.height}px
