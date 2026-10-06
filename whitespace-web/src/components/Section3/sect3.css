@@ -1,26 +1,60 @@
+/* PART 1: BASE (320px and up) */
+
 .sect3_container {
     display: flex;
-    gap: 3em
+    flex-direction: column-reverse;
+    gap: 3em;
+    padding: 2em 1em;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sect3_row2 p{
+    text-align: center;
+}
+.sect3_left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect3_left img {
+    width: clamp(12rem, 65vw, 25rem);
+    height: auto;
 }
 
 .sect3_right {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
 }
 
-@media (max-width: 768px) {
+
+/* PART 2: QUERIES, SMALLEST TO LARGEST */
+
+/* 769px and up: side by side */
+@media (min-width: 769px) {
     .sect3_container {
-        flex-direction: column-reverse;
-        height: auto;
-        max-width: 100%;
+        flex-direction: row;
+        gap: 3em;
+        padding: 2em;
+    }
+.sect3_row2 p{
+    text-align:left;
+}
+    .sect3_left {
+        width: 50%;
+    }
+
+    .sect3_left img {
+        width: clamp(15rem, 45vw, 35rem);
     }
 
     .sect3_right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: stretch;
+        gap: 4em;
     }
 }

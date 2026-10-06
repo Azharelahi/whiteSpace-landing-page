@@ -25,7 +25,7 @@ const Sect4 = () => {
                 </div>
 
                 <div className="sect4_row3">
-                    <button>Get Started</button>
+                    <button className="blue_button">Get Started</button>
                 </div>
 
             </div>

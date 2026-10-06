@@ -1,21 +1,25 @@
+/* PART 1: BASE (320px and up) */
+
 .sect2_body {
     padding-top: clamp(5em, 10vh, 10em);
-    padding-left: 3%;
-    padding-right: 2ch;
     padding-bottom: clamp(5em, 5vh, 10em);
-    height: auto;
-    border: 2px solid red;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .sect2_left {
-    max-width: 48%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 2em;
-    padding-right: 2em
+    padding: 0 1em;
+    box-sizing: border-box;
 }
 
 .sect2_row1 {
@@ -31,61 +35,80 @@
     position: absolute;
     left: 0;
     bottom: -0.5em;
-
     width: 24rem;
-    /* change this to control image width */
+    max-width: 100%;
     height: auto;
-
     z-index: 1;
 }
 
 .sect2_right {
-    max-width: 52%;
-    flex: 1;
-
+    width: 90%;
+    align-self: center;
+    height: 300px;
     background: #C4DEFD;
-
-    align-self: stretch;
+    box-sizing: border-box;
 }
 
-.sect2_body button {
-    padding: 1em 1.8em;
+
+
+
+/* PART 2: QUERIES, SMALLEST TO LARGEST */
+
+/* 400px and up */
+@media (min-width: 400px) {
+    .sect2_left {
+        padding: 0 1.5em;
+    }
 }
 
-@media (max-width: 768px) {
+/* 769px and up: side by side */
+@media (min-width: 769px) {
     .sect2_body {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        width: 100%;
-        box-sizing: border-box;
-        padding-right: 3%
+        flex-direction: row;
+        gap: 0;
+        padding-right: 2ch;
     }
 
     .sect2_left {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-
+        max-width: 48%;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 3.5em 0 1em;
     }
 
     .sect2_right {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
+        max-width: 52%;
+        width: auto;
+        height: auto;
+        flex: 1;
+        align-self: stretch;
+    }
+}
+/* 1024px and up */
+@media (min-width: 1024px) {
+      .sect2_body {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    .sect2_left {
+        padding-right: 4.5em;
+    }
+}
 
-        height: 300px;
-        min-height: 300px;
+/* 1440px and up */
+@media (min-width: 1440px) {
+    
+    .sect2_left {
+        padding-right: 5em;
+        padding-left: 2em;
+    }
+}
 
-        flex: 0 0 300px;
-
-        background-color: #C4DEFD;
-        box-sizing: border-box;
+/* 1920px and up */
+@media (min-width: 1920px) {
+    .sect2_body {
+        
+        max-width: 1800px;
+        margin: 0 auto;
     }
 }

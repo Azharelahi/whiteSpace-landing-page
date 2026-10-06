@@ -1,31 +1,57 @@
+/* PART 1: BASE (320px and up) */
+
 .sect4_container {
+    padding: 2em 1em;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    gap: 5vh
 }
 
-/* 50% IMAGE */
 .sect4_image {
-    width: 50%;
+    width: 100%;
 }
 
 .sect4_image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
 }
 
-/* 50% CONTENT */
 .sect4_content {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
 }
 
-/* THREE ROWS */
 .sect4_row1,
 .sect4_row2,
 .sect4_row3 {
     flex: 1;
+}
+
+
+/* PART 2: QUERIES, SMALLEST TO LARGEST */
+
+/* 769px and up: side by side */
+@media (min-width: 769px) {
+    .sect4_container {
+        flex-direction: row-reverse;
+    }
+
+    .sect4_image {
+        width: 50%;
+    }
+
+    .sect4_image img {
+        height: 100%;
+    }
+
+    .sect4_content {
+        width: 50%;
+    }
 }

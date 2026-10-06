@@ -10,7 +10,7 @@ const Sect2 = () => {
 
                 <div className="sect2_row1">
                     <h2>Project <br/> Managment</h2>
-                    <img src={Element} alt="Element" />
+                    {/* <img src={Element} alt="Element" /> */}
                 </div>
 
                 <div className="sect2_row2">

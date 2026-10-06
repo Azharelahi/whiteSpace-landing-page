@@ -18,7 +18,7 @@ const Sect3 = () => {
 
                 {/* Row 1: Heading */}
                 <div className="sect3_row1">
-                    <h2>Heading</h2>
+                    <h2>Work Together</h2>
                 </div>
 
                 {/* Row 2: Paragraph */}
