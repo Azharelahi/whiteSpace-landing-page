@@ -1,0 +1,30 @@
+.sect5_container {
+    width: 100%;
+    display: flex;
+}
+
+/* 50% IMAGE */
+.sect5_image {
+    width: 50%;
+}
+
+.sect5_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 50% CONTENT */
+.sect5_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* THREE ROWS */
+.sect5_row1,
+.sect5_row2,
+.sect5_row3 {
+    flex: 1;
+}

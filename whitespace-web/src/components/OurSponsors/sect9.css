@@ -1,0 +1,34 @@
+.sect9_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ROW 1 */
+.sect9_row1 {
+    width: 100%;
+    text-align: center;
+}
+
+/* ROW 2 */
+.sect9_row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+/* SPONSOR IMAGES */
+.sect9_sponsor {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect9_sponsor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

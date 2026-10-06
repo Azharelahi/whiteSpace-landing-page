@@ -1,0 +1,31 @@
+.sect4_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 50% IMAGE */
+.sect4_image {
+    width: 50%;
+}
+
+.sect4_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 50% CONTENT */
+.sect4_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* THREE ROWS */
+.sect4_row1,
+.sect4_row2,
+.sect4_row3 {
+    flex: 1;
+}

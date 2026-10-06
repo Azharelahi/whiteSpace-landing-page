@@ -1,0 +1,32 @@
+.sect7_container {
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* ROW 1 */
+.sect7_row1 {
+    width: 100%;
+}
+
+/* ROW 2 */
+.sect7_row2 {
+    width: 100%;
+}
+
+/* ROW 3 */
+.sect7_row3 {
+    width: 100%;
+}
+
+/* Optional button spacing */
+.sect7_row3 button {
+    padding: 1em 1.8em;
+}

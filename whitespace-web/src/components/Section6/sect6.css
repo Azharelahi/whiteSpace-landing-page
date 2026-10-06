@@ -1,0 +1,34 @@
+.sect6_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ROW 1 */
+.sect6_row1 {
+    width: 100%;
+}
+
+/* ROW 2 */
+.sect6_row2 {
+    width: 100%;
+}
+
+/* ROW 3 */
+.sect6_row3 {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+}
+
+/* THREE IMAGES */
+.sect6_image {
+    flex: 1;
+}
+
+.sect6_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}

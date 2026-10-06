@@ -1,0 +1,29 @@
+.sect11_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sect11_row1 {
+    width: 100%;
+    text-align: center;
+}
+
+.sect11_row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.sect11_image {
+    flex: 1;
+}
+
+.sect11_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
