@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Sect2 from './components/section1/sect2.jsx';
 import Sect3 from "./components/Section3/sect3.jsx"
 import './App.css';
